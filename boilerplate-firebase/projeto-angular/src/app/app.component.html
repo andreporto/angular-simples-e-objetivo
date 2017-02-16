@@ -1,0 +1,14 @@
+<h1>
+  {{title}}
+</h1>
+<div>
+  <ul>
+    <li *ngFor="let u of users | async">{{u.name}} - {{u.gender}} - {{ (u.sexo | async)?.$value }}</li>
+  </ul>
+</div>
+<div>
+  <h4 *ngFor="let g of genders | async">{{g?.$key}} - {{g?.$value}}</h4>
+</div>
+<div>
+  <button (click)="addUser()">Add User</button>
+</div>

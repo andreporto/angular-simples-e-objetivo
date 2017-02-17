@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 
+// this constant must be replaced by your own data from Google's firebase application site
 export const firebaseConfig = {
     apiKey: "AIzaSyDQR8SxXygrnvAAvocvBUlxmSQDFFZxRO0",
     authDomain: "boilerplate-firebase.firebaseapp.com",

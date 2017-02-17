@@ -33,7 +33,10 @@ export class AppComponent {
   }
 
   addUser() {
-    // this.users.push(new User('Dequinho', 'decoporto@gmail.com', 'http://placehold.it/150',1));
+    this.af.database.list('/users').push(new User('Dequinho', 'decoporto@gmail.com', 'http://placehold.it/150',1));
   }
 
+  deleteUser() {
+    this.af.database.object('/users/1').remove();
+  }
 }

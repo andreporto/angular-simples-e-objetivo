@@ -1,0 +1,23 @@
+{
+  "gender" : [ null, "male", "female" ],
+  "users" : {
+    "1" : {
+      "avatar" : "http://placehold.it/150",
+      "email" : "andreporto@yahoo.com",
+      "gender" : 1,
+      "name" : "André Porto"
+    },
+    "2" : {
+      "avatar" : "http://placehold.it/150",
+      "email" : "fulana@gmail.com",
+      "gender" : 2,
+      "name" : "Fulana de Tal"
+    },
+    "3" : {
+      "avatar" : "http://placehold.it/150",
+      "email" : "cicrana@gmail.com",
+      "gender" : 2,
+      "name" : "Cicrana de Tal"
+    }
+  }
+}

@@ -9,11 +9,11 @@ import { AppComponent } from './app.component';
 
 // this constant must be replaced by your own data from Google's firebase application site
 export const firebaseConfig = {
-    apiKey: "AIzaSyDQR8SxXygrnvAAvocvBUlxmSQDFFZxRO0",
-    authDomain: "boilerplate-firebase.firebaseapp.com",
-    databaseURL: "https://boilerplate-firebase.firebaseio.com",
-    storageBucket: "boilerplate-firebase.appspot.com",
-    messagingSenderId: "511637081671"
+    apiKey: "seus dados",
+    authDomain: "sua-aplicacao.firebaseapp.com",
+    databaseURL: "https://sua-aplicacao.firebaseio.com",
+    storageBucket: "sua-aplicacao.appspot.com",
+    messagingSenderId: "seus dados"
 };
 
 @NgModule({

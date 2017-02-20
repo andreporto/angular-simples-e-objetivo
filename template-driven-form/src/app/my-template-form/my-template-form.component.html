@@ -1,0 +1,21 @@
+<h1>Template Driven Form</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+  <input type="text" id="name" name="name" ngModel placeholder="Name">
+  <input type="text" id="address" name="address" ngModel placeholder="Address">
+  <button type="submit">Submit</button>
+</form>
+<hr>
+<h1>Form2 Value:</h1>
+<pre>{{formValue | json}}</pre>
+<hr>
+<form #f2="ngForm">
+  <input type="text" id="name" name="name" ngModel placeholder="Name">
+  <input type="text" id="surname" name="surname" ngModel placeholder="Surname">
+
+  <input type="text" id="address" name="address" ngModel placeholder="Address">
+  <button (click)="onSubmit2(f2.value)">Submit2</button>
+</form>
+<hr>
+<h1>Form2 Value:</h1>
+<pre>{{form2Value | json}}</pre>
+<h3>Fullname: {{fullname}}</h3>

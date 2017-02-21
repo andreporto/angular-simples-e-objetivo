@@ -1,0 +1,10 @@
+
+<form [formGroup]="myForm">
+
+  <input type="text" [formControl]="myForm.controls['name']">
+  <input type="text" [formControl]="myForm.controls['surname']">
+  <input type="text" [formControl]="myForm.controls['address']">
+
+  <button (click)="onSubmit(myForm.value)">Submit</button>
+</form>
+<pre>{{myForm.value | json}}</pre>

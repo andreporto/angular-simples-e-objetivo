@@ -1,10 +1,43 @@
 
 <form [formGroup]="myForm">
 
-  <input type="text" [formControl]="myForm.controls['name']">
-  <input type="text" [formControl]="myForm.controls['surname']">
-  <input type="text" [formControl]="myForm.controls['address']">
+  <div>
+    <label for="name">First Name:</label>
+    <input type="text" formControlName="name" id="name">
+    <label for="surname">Last Name:</label>
+    <input type="text" formControlName="surname" id="surname">
+  </div>
+  
+  <div formGroupName="address">
 
-  <button (click)="onSubmit(myForm.value)">Submit</button>
+    <div>
+      <label for="street">Street:</label>
+      <input type="text" formControlName="street" id="street">
+      <label for="number">Nº</label>
+      <input type="number" formControlName="number" id="number">
+    </div>
+
+    <div>
+      <label for="city">City:</label>
+      <input type="text" formControlName="city" id="city">
+    </div>
+
+  </div>
+  
+  <div>
+    <button (click)="onSubmit(myForm.value)">Submit</button>
+  </div>
+
 </form>
+<h2>
+  Full Form Value
+</h2>
 <pre>{{myForm.value | json}}</pre>
+<h2>
+  Full Address Value
+</h2>
+<pre>{{myForm.value.address | json}}</pre>
+<h2>
+  Form Stringify
+</h2>
+{{toString()}}

@@ -13,7 +13,11 @@ export class ModelFormComponent implements OnInit {
     this.myForm = fb.group ({
       name: [''],
       surname: [''],
-      address: ['']
+      address: fb.group({
+        street: [''],
+        number: [''],
+        city: ['']
+      })
     });
    }
 
@@ -24,6 +28,11 @@ export class ModelFormComponent implements OnInit {
 
   onSubmit(v:any) {
     console.log(this.myForm);
+    
+  }
+
+  toString() {
+    return JSON.stringify(this.myForm.value);
     
   }
 
